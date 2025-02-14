@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Basic Form</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      fieldset {
+        width: fit-content;
+        border-radius: 10px;
+      }
+
+      legend {
+        background-color: black;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+      }
+
+      .input_name_section {
+        display: flex;
+        flex-direction: column;
+        width: 10vw;
+        gap: 10px;
+      }
+
+      button {
+        display: block;
+        padding: 10px 20px;
+        margin-top: 10px;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+      }
+
+      input,
+      textarea,
+      select,
+      button {
+        box-sizing: border-box;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Basic Form</legend>
+        <div class="input_name_section">
+          <label for="name">First Name: </label>
+          <input type="text" id="name" name="user_name">
+          <label for="mail">Email: </label>
+          <input type="email" id="mail" name="user_mail">
+        </div>
+        <br>
+        <label style="display: block;margin-bottom: 10px;" for="msg">Details & Information</label>
+        <textarea style="font-size: 16px;resize: none;" name="user_message" id="msg" cols="60" rows="20" placeholder="Enter information here..."></textarea>
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
