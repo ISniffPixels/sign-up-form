@@ -1,5 +1,4 @@
 :root {
-    font-size: 62.5%;
     box-sizing: border-box;
 }
 
@@ -7,33 +6,119 @@
 *::before,
 *::after {
     box-sizing: inherit;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    /* outline: 2px solid gray; */
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-fieldset {
-  width: fit-content;
-  border-radius: 10px;
+.paragraph_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2rem;
+    flex: 25%;
+    padding: 30px;
 }
 
-legend {
-  background-color: black;
-  color: white;
-  padding: 15px;
-  border-radius: 10px;
+.logo_container {
+    background-image: url('/img/hellfire.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    flex: 45%;
+    height: 100%;
 }
 
-.input_name_section {
-  display: flex;
-  flex-direction: column;
-  width: 10vw;
-  gap: 10px;
+.logo_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logo_container .logo_img img {
+    display: block;
+    width: 300px;
+    height: auto;
+}
+
+.attribution, a {
+    text-align: center;
+    font-size: x-small;
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    padding: 20px;
+    gap: 50px;
+}
+
+.form_container {
+    background-color: rgb(128, 128, 128, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 75%;
+    height: 100%;
+
+}
+
+.form_bg {
+    background-color: whitesmoke;
+    box-shadow: -3px 3px 6px rgb(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 10px;
+    flex: 25%;
+}
+
+.form_bg > p {
+    padding: 20px;
+}
+
+.button_container {
+    padding: 10px;
+    width: 100%;
+    flex: 25%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1200px;
+    height: 100vh;
+}
+
+label {
+    display: block;
+    font-size: xx-small;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.input_section_one,
+.input_section_two {
+    display: block;
+}
+
+input {
+    width: fit-content;
 }
 
 button {
@@ -43,11 +128,4 @@ button {
   background-color: black;
   color: white;
   border-radius: 10px;
-}
-
-input,
-textarea,
-select,
-button {
-  box-sizing: border-box;
 }
