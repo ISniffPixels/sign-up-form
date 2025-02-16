@@ -9,21 +9,32 @@
     padding: 0;
     margin: 0;
     /* outline: 2px solid gray; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: radial-gradient(ellipse at top, #ff4800, transparent),
+            radial-gradient(ellipse at bottom, #ff0000, transparent);
 }
 
 .paragraph_container {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    font-size: 1.1rem;
     gap: 2rem;
     flex: 25%;
     padding: 30px;
+    font-weight: bolder;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+.paragraph_container p {
+    width: 40rem;
 }
 
 .logo_container {
@@ -55,7 +66,7 @@ body {
 
 .attribution, a {
     text-align: center;
-    font-size: x-small;
+    font-size: xx-small;
     color: whitesmoke;
     margin-bottom: 10px;
 }
@@ -67,7 +78,7 @@ form {
 }
 
 .form_container {
-    background-color: rgb(128, 128, 128, 0.3);
+    background-color: rgba(0, 0, 0, 0.658);
 
     display: flex;
     flex-direction: column;
@@ -79,21 +90,37 @@ form {
 }
 
 .form_bg {
-    background-color: whitesmoke;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.795);
     box-shadow: -3px 3px 6px rgb(0, 0, 0, 0.3);
     width: 100%;
     padding: 10px;
     flex: 25%;
 }
 
-.form_bg > p {
+.form_bg p {
+    font-size: 1.2rem;
+    font-weight: bolder;
     padding: 20px;
 }
 
 .button_container {
-    padding: 10px;
+    padding: 25px;
     width: 100%;
     flex: 25%;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+.button_container p {
+    margin: 30px 0;
+    font-weight: bolder;
+}
+
+.button_container a {
+    font-size: 16px;
+    font-weight: bolder;
+    color: red;
 }
 
 .container {
@@ -105,27 +132,41 @@ form {
     height: 100vh;
 }
 
-label {
-    display: block;
-    font-size: xx-small;
-    text-transform: uppercase;
-    font-family: sans-serif;
-}
-
 .input_section_one,
 .input_section_two {
     display: block;
 }
 
-input {
-    width: fit-content;
+label {
+    display: block;
+    font-size: xx-small;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 12px 0 6px 0;
 }
+
+input {
+    padding: 10px;
+    width: fit-content;
+    outline: none;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus {
+    border-color: rgb(54, 156, 190);
+}
+
+input[type="password"]:empty {
+    border-color: rgba(255, 0, 0, 0.623);
+}
+
 
 button {
   display: block;
-  padding: 10px 20px;
-  margin-top: 10px;
-  background-color: black;
-  color: white;
+  padding: 20px;
+  background-color: rgb(192, 0, 0);
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
   border-radius: 10px;
+  cursor: pointer;
 }
