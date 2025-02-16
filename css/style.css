@@ -153,11 +153,11 @@ input {
 }
 
 input[type="text"]:focus {
-    border-color: rgb(54, 156, 190);
+    border-color: rgb(0, 191, 255);
 }
 
 input[type="password"]:empty {
-    border-color: rgba(255, 0, 0, 0.623);
+    border-color: rgb(255, 0, 0);
 }
 
 
